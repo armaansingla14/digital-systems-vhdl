@@ -29,7 +29,7 @@ architecture rtl of counter is
   function top_value return unsigned is
   begin
     if MODULUS = 0 then
-      return to_unsigned(2**WIDTH - 1, WIDTH);
+      return (WIDTH - 1 downto 0 => '1');
     else
       return to_unsigned(MODULUS - 1, WIDTH);
     end if;
@@ -39,7 +39,7 @@ architecture rtl of counter is
   signal cnt   : unsigned(WIDTH - 1 downto 0) := (others => '0');
 begin
 
-  assert MODULUS = 0 or MODULUS <= 2**WIDTH
+  assert MODULUS = 0 or WIDTH >= 31 or MODULUS <= 2**WIDTH
     report "counter: MODULUS does not fit in WIDTH bits" severity failure;
 
   process (clk)
