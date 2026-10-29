@@ -1,0 +1,18 @@
+run,checks,failures,sim_cycles,status,wall_s,note
+tb_alu,13254,0,0,PASS,1.50,
+tb_regfile,1033,0,1013,PASS,0.33,
+tb_counter,16001,0,4003,PASS,0.68,
+tb_fifo,19068,0,5003,PASS,1.61,
+tb_uart,1877,0,100138,PASS,1.13,
+tb_sram_ctrl_ws0,10809,0,7534,PASS,1.44,
+tb_sram_ctrl_ws3,19809,0,16534,PASS,1.61,
+soc_isa_test_ws0,1038,0,2395,PASS,0.15,TB + ISS checks
+soc_fib_ws0,1038,0,2953,PASS,0.15,TB + ISS checks
+soc_fib_ws2,1038,0,3349,PASS,0.16,TB + ISS checks
+soc_sort_ws0,1038,0,7572,PASS,0.35,TB + ISS checks
+soc_sort_ws3,1038,0,11748,PASS,0.41,TB + ISS checks
+soc_muldiv_ws0,1038,0,9186,PASS,0.41,TB + ISS checks
+soc_sieve_ws0,1038,0,13544,PASS,0.71,TB + ISS checks
+soc_sieve_ws1,1038,0,16249,PASS,0.79,TB + ISS checks
+soc_hello_ws0,1088,0,6364,PASS,0.38,TB + ISS checks
+soc_echo_ws0,1073,0,5530,PASS,0.30,TB + ISS checks

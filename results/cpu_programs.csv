@@ -1,0 +1,12 @@
+program,wait_states,words,rtl_cycles,iss_cycles,cycle_check,instret,cpi,tb_checks,iss_checks,uart_out,status,seconds
+isa_test,0,63,310,310,exact,60,5.167,2,1036,,PASS,0.15
+fib,0,13,868,868,exact,174,4.989,2,1036,,PASS,0.15
+fib,2,13,1264,1264,exact,174,7.264,2,1036,,PASS,0.16
+sort,0,272,5487,5487,exact,1028,5.338,2,1036,,PASS,0.35
+sort,3,272,9663,9663,exact,1028,9.4,2,1036,,PASS,0.41
+muldiv,0,416,7101,7101,exact,1579,4.497,2,1036,,PASS,0.41
+sieve,0,25,11459,11459,exact,2356,4.864,2,1036,,PASS,0.71
+sieve,1,25,14164,14164,exact,2356,6.012,2,1036,,PASS,0.79
+hello,0,48,4279,1239,n/a (I/O polling),856,4.999,54,1034,"Hello from the VHDL CPU!
+",PASS,0.38
+echo,0,33,3445,2065,n/a (I/O polling),692,4.978,39,1034,"HELLO, VHDL WORLD.",PASS,0.3
